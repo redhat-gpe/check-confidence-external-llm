@@ -13,7 +13,7 @@ PRESENCE_PENALTY = 1.03
 
 def infer_with_template(input_text, template):
     llm = VLLMOpenAI(
-        openai_api_key="VAR_MODEL_API_TOKEN",
+        openai_api_key="VAR_MODEL_API_KEY",
         openai_api_base= f"{INFERENCE_SERVER_URL}/v1",
         model_name="VAR_MODEL_NAME",
         max_tokens=MAX_NEW_TOKENS,
